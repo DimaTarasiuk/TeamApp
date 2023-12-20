@@ -1,0 +1,22 @@
+@import "../../styles/variable.scss";
+@import "../../styles/responsive.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+
+  .logo {
+    width: 10%;
+
+    @include sm {
+      width: 30%;
+    }
+
+    @include md {
+      width: 20%;
+    }
+  }
+}

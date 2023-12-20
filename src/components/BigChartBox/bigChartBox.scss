@@ -1,0 +1,32 @@
+@import "../../styles/variable.scss";
+
+.bigChartBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-switch{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    .switch-text{
+      font-size: 14px;
+      font-weight: bold;
+      color: $soft-grey-color;
+    }
+  }
+
+  .chart {
+    width: 100%;
+    height: 300px;
+  }
+}

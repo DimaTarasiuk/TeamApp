@@ -1,0 +1,99 @@
+@import "../../styles/variable.scss";
+@import "../../styles/responsive.scss";
+
+.userInfoModal {
+  font-family: "Inter", sans-serif;
+  color: $dark-color;
+
+  &__title {
+    margin-bottom: 14px;
+
+    @include sm {
+      margin-bottom: 10px;
+    }
+  }
+
+  .userInfoModal__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 5px 5px 5px;
+
+    @include sm {
+      flex-direction: column;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+
+      width: 40%;
+
+      @include sm {
+        margin-bottom: 5px;
+      }
+    }
+
+    .user-color {
+      width: 25px;
+      height: 20px;
+      border-radius: 10px;
+
+      // @include sm {
+      //   width: 15px;
+      //   height: 10px;
+      // }
+    }
+
+    .user-title {
+      margin-left: 5px;
+    }
+
+    .user-inputBlock {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .user-input {
+      width: 20%;
+      margin: 0 5px;
+    }
+
+    .user-input-large {
+      width: 40%;
+      margin: 0 10px;
+
+      // @include sm {
+      //   width: 30%;
+      //   margin: 0;
+      // }
+    }
+
+    .user-input-md {
+      width: 25%;
+      margin: 0 10px;
+
+      // @include sm {
+      //   width: 25%;
+      // }
+    }
+
+    .user-btn {
+      padding: 5px 10px;
+      height: 70%;
+      color: $soft-color;
+      background-color: $main-bg;
+
+      // @include sm {
+      //   padding: 5px;
+      // }
+    }
+
+    .user-btn:hover {
+      color: $main-bg;
+      background-color: $soft-color;
+    }
+  }
+}

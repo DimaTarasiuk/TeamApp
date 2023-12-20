@@ -1,0 +1,24 @@
+@import "../../styles/variable.scss";
+
+.drawerBox {
+  &__card {
+    font-family: "Inter", sans-serif;
+    background-color: $main-module-bg;
+
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+
+    .userCard {
+      margin: 20px 0;
+      padding: 15px 20px;
+      color: $dark-color;
+      border-radius: 10px;
+      border: 2px solid $dark-color;
+
+      &-title {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../styles/responsive.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+  .logo {
+    width: 6%;
+
+    @include sm {
+      width: 20%;
+    }
+
+    @include md {
+      width: 10%;
+    }
+  }
+
+  &__copy {
+    @include sm {
+      font-size: 12px;
+    }
+
+    @include md {
+      font-size: 12px;
+    }
+  }
+}
